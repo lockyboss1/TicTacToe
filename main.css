@@ -50,7 +50,7 @@ button:focus {
 }
 
 .modal {
-    display: none;
+    
     position: fixed;
     z-index: 1;
     left: 0;
@@ -120,4 +120,30 @@ button:focus {
 #sel-2 {
     color: blue;
     font-size: large;
+}
+
+#result {
+    margin-top: -6%;
+    margin-left: 75%;
+}
+
+#sel-4{
+    margin-top: -5%;
+    font-size: 50px;
+    margin-left: -7%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#sel-5 {
+    margin-left: 5%;
+    margin-top: -15%;
+    font-size: 26px;
+    color: #f4a261;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#myBtn {
+    background-color: red;
+    cursor: pointer;
 }

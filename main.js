@@ -16,6 +16,8 @@ let btn7 = document.getElementById('btn7');
 let btn8 = document.getElementById('btn8');
 let btn9 = document.getElementById('btn9');
 let update = document.getElementById('sel-3');
+let result = document.getElementById('sel-4');
+let result1 = document.getElementById('sel-5');
 
 //function that takes the user input.
 function addName() {
@@ -63,90 +65,139 @@ function gameOver() {
         x[i].onclick = function () {
             x[i].disabled = true;
             if (x[0].textContent == 'X' && x[1].textContent == 'X' && x[2].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
+                playAgain();
             } else if (x[0].textContent == 'O' && x[1].textContent == 'O' && x[2].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;  
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[3].textContent == 'X' && x[4].textContent == 'X' && x[5].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[3].textContent == 'O' && x[4].textContent == 'O' && x[5].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[6].textContent == 'X' && x[7].textContent == 'X' && x[8].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[6].textContent == 'O' && x[7].textContent == 'O' && x[8].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[0].textContent == 'X' && x[3].textContent == 'X' && x[6].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[0].textContent == 'O' && x[3].textContent == 'O' && x[6].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[1].textContent == 'X' && x[4].textContent == 'X' && x[7].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[1].textContent == 'O' && x[4].textContent == 'O' && x[7].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[2].textContent == 'X' && x[5].textContent == 'X' && x[8].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[2].textContent == 'O' && x[5].textContent == 'O' && x[8].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[0].textContent == 'X' && x[4].textContent == 'X' && x[8].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[0].textContent == 'O' && x[4].textContent == 'O' && x[8].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[2].textContent == 'X' && x[4].textContent == 'X' && x[6].textContent == 'X') {
-                update.textContent = `Game Over,  ${name1.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name1.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
             } else if (x[2].textContent == 'O' && x[4].textContent == 'O' && x[6].textContent == 'O') {
-                update.textContent = `Game Over,  ${name2.value} wins!!!`;
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `${name2.value} Wins!!!`;
                 x.forEach(button => {
                     button.disabled = true;
                 });
-            } else {
-                //update.textContent = `Game Over,  It's a draw`;
-            }
+            } else if (x[0].textContent == 'O' && x[1].textContent == 'X' && x[2].textContent == 'O' &&
+                x[3].textContent == 'X' && x[4].textContent == 'X' && x[5].textContent == 'O' &&
+                x[6].textContent == 'X' && x[7].textContent == 'O' && x[8].textContent == 'X') {
+                update.textContent = '';
+                result.textContent = `GAME OVER`;
+                result1.textContent = `It's a Draw`;
+            } 
         }
     }
 }
 gameOver();
 
+function playAgain() {
+    var btn = document.createElement("BUTTON"); 
+    btn.id = 'myBtn'  
+    btn.innerHTML = "Play Again?";                   
+    result1.appendChild(btn); 
+   
+       btn.onclick = function () {
+        x.textContent = '';
+       }
+    
+}
+playAgain()

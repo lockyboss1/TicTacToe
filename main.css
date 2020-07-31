@@ -39,7 +39,7 @@ button:focus {
     outline: none;
 }
 
-button {
+.btn-input {
     padding: 45px;
     cursor: pointer;
     background-color: #f7ede2;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="myModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>GAME RULES</h2>
+            <ul>
+                <li>Player1's marker is X.</li>
+                <li>Player2's marker is O.</li>
+                <li>The first player to have three straight markers, either vertically or horizontally wins.</li>
+                <li>There is a tie, if both players don't have three straight markers.</li>
+            </ul>
+            <hr>
+            <div id='playerName'>
+                <label for="name">Player1 name:</label>
+                <input type="text" id="name1" name="fname" required><br><br>
+                <label for="author">Player2 name:</label>
+                <input type="text" id="name2" name="lname" required><br><br>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <h1>myTicTacToe</h1>
+    <table id='table'>
+        <tr>
+            <td class="space"><button id="btn1" class='btn-input'></button></td>
+            <td class="space"><button id="btn2" class='btn-input'></button></td>
+            <td class="space"><button id="btn3" class='btn-input'></button></td>
+        </tr>
+        <tr>
+            <td class="space"><button id="btn4" class='btn-input'></button></td>
+            <td class="space"><button id="btn5" class='btn-input'></button></td>
+            <td class="space"><button id="btn6" class='btn-input'></button></td>
+        </tr>
+        <tr>
+            <td class="space"><button id="btn7" class='btn-input'></button></td>
+            <td class="space"><button id="btn8" class='btn-input'></button></td>
+            <td class="space"><button id="btn9" class='btn-input'></button></td>
+        </tr>
+    </table>
+
+    <div id="selection">
+        <p id="sel-3"></p>
+    </div>
+
+    <div id="playerName1">
+        <p id="sel-1">Player1 name: </p>
+        <p id="sel-2">Player2 name: </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>

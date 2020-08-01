@@ -50,7 +50,7 @@ button:focus {
 }
 
 .modal {
-    
+   
     position: fixed;
     z-index: 1;
     left: 0;
@@ -136,14 +136,30 @@ button:focus {
 }
 
 #sel-5 {
-    margin-left: 5%;
+    margin-left: 9%;
     margin-top: -15%;
     font-size: 26px;
     color: #f4a261;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+#sel-6 {
+    margin-left: 19%;
+    margin-top: -5%;
+}
+
 #myBtn {
-    background-color: red;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
+}
+
+#myBtn:hover {
+    opacity: 0.5;
 }

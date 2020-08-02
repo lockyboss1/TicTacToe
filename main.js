@@ -69,7 +69,7 @@ function playerOneWins() {
 function playerTwoWins() {
     update.textContent = '';
     result.textContent = `GAME OVER`;
-    result1.textContent = `${name1.value} Wins!!!`;
+    result1.textContent = `${name2.value} Wins!!!`;
 }
 
 //function that displays that both players drew the game   
@@ -97,6 +97,7 @@ function playAgain() {
         for (let i = 0; i < x.length; i++) {
             x[i].textContent = '';
             x[i].disabled = false;
+            x[i].style.backgroundColor = '#f7ede2';
             result.textContent = '';
             result1.textContent = '';
             playerSelection = 1;
@@ -112,66 +113,114 @@ function gameOver() {
         x[i].onclick = function () {
             x[i].disabled = true;
             if (x[0].textContent == 'X' && x[1].textContent == 'X' && x[2].textContent == 'X') {
+                x[0].style.backgroundColor = '#ddbea9';
+                x[1].style.backgroundColor = '#ddbea9';
+                x[2].style.backgroundColor = '#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[0].textContent == 'O' && x[1].textContent == 'O' && x[2].textContent == 'O') {
+                x[0].style.backgroundColor = '#ddbea9';
+                x[1].style.backgroundColor = '#ddbea9';
+                x[2].style.backgroundColor = '#ddbea9';
                 playerTwoWins();
                 stop();
                 playAgain();
             } else if (x[3].textContent == 'X' && x[4].textContent == 'X' && x[5].textContent == 'X') {
+                x[3].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[5].style.backgroundColor = '#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[3].textContent == 'O' && x[4].textContent == 'O' && x[5].textContent == 'O') {
+                x[3].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[5].style.backgroundColor = '#ddbea9';
                 playerTwoWins();
                 stop();
                 playAgain();
             } else if (x[6].textContent == 'X' && x[7].textContent == 'X' && x[8].textContent == 'X') {
+                x[6].style.backgroundColor = '#ddbea9';
+                x[7].style.backgroundColor = '#ddbea9';
+                x[8].style.backgroundColor = '#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[6].textContent == 'O' && x[7].textContent == 'O' && x[8].textContent == 'O') {
+                x[6].style.backgroundColor = '#ddbea9';
+                x[7].style.backgroundColor = '#ddbea9';
+                x[8].style.backgroundColor = '#ddbea9';
                 playerTwoWins();;
                 stop();
                 playAgain();
             } else if (x[0].textContent == 'X' && x[3].textContent == 'X' && x[6].textContent == 'X') {
+                x[0].style.backgroundColor = '#ddbea9';
+                x[3].style.backgroundColor = '#ddbea9';
+                x[6].style.backgroundColor = '#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[0].textContent == 'O' && x[3].textContent == 'O' && x[6].textContent == 'O') {
+                x[0].style.backgroundColor = '#ddbea9';
+                x[3].style.backgroundColor = '#ddbea9';
+                x[6].style.backgroundColor = '#ddbea9';
                 playerTwoWins();
                 stop();
                 playAgain();
             } else if (x[1].textContent == 'X' && x[4].textContent == 'X' && x[7].textContent == 'X') {
+                x[1].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[7].style.backgroundColor ='#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[1].textContent == 'O' && x[4].textContent == 'O' && x[7].textContent == 'O') {
+                x[1].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[7].style.backgroundColor = '#ddbea9';
                 playerTwoWins();
                 stop();
                 playAgain();
             } else if (x[2].textContent == 'X' && x[5].textContent == 'X' && x[8].textContent == 'X') {
+                x[2].style.backgroundColor = '#ddbea9';
+                x[5].style.backgroundColor = '#ddbea9';
+                x[8].style.backgroundColor = '#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[2].textContent == 'O' && x[5].textContent == 'O' && x[8].textContent == 'O') {
+                x[2].style.backgroundColor = '#ddbea9';
+                x[5].style.backgroundColor = '#ddbea9';
+                x[8].style.backgroundColor = '#ddbea9';
                 playerTwoWins();
                 stop();
                 playAgain();
             } else if (x[0].textContent == 'X' && x[4].textContent == 'X' && x[8].textContent == 'X') {
+                x[0].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[8].style.backgroundColor = '#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[0].textContent == 'O' && x[4].textContent == 'O' && x[8].textContent == 'O') {
+                x[0].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[8].style.backgroundColor = '#ddbea9';
                 playerTwoWins();
                 stop();
                 playAgain();
             } else if (x[2].textContent == 'X' && x[4].textContent == 'X' && x[6].textContent == 'X') {
+                x[2].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[6].style.backgroundColor = '#ddbea9';
                 playerOneWins()
                 stop();
                 playAgain();
             } else if (x[2].textContent == 'O' && x[4].textContent == 'O' && x[6].textContent == 'O') {
+                x[2].style.backgroundColor = '#ddbea9';
+                x[4].style.backgroundColor = '#ddbea9';
+                x[6].style.backgroundColor = '#ddbea9';
                 playerTwoWins();
                 stop();
                 playAgain();
@@ -185,8 +234,14 @@ function gameOver() {
                 x[6].textContent == 'X' && x[7].textContent == 'X' && x[8].textContent == 'O') {
                 draw();
                 playAgain();
-            } 
+            }  else if (x[0].textContent == 'X' && x[1].textContent == 'X' && x[2].textContent == 'O' &&
+                x[3].textContent == 'O' && x[4].textContent == 'O' && x[5].textContent == 'X' &&
+                x[6].textContent == 'X' && x[7].textContent == 'X' && x[8].textContent == 'O') {
+                draw();
+                playAgain();
+        }
         }
     }
 }
 gameOver();
+

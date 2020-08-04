@@ -76,7 +76,7 @@ function playerTwoWins() {
 function draw() {
     update.textContent = '';
     result.textContent = `GAME OVER`;
-    result1.textContent = `It's a Draw`;
+    result1.textContent = `Sorry....It's a Tie`;
 }
 
 //function to disable all tiles after game is over
@@ -239,9 +239,20 @@ function gameOver() {
                 x[6].textContent == 'X' && x[7].textContent == 'X' && x[8].textContent == 'O') {
                 draw();
                 playAgain();
-        }
+            }  else if (x[0].textContent == 'X' && x[1].textContent == 'X' && x[2].textContent == 'O' &&
+                x[3].textContent == 'O' && x[4].textContent == 'X' && x[5].textContent == 'X' &&
+                x[6].textContent == 'X' && x[7].textContent == 'O' && x[8].textContent == 'O') {
+                draw();
+                playAgain();
+            }
         }
     }
 }
 gameOver();
 
+function computerChoice() {
+    for (let i = 0; i < x.length; i++) {
+    let randomChoice = Math.floor(Math.random() * x[i].length);
+    return x[i][randomChoice];
+    }
+}
